@@ -7,6 +7,9 @@ Route.get('/', () => {
   return { status: true }
 })
 
+// Sessions
+Route.post('sessions', 'SessionController.login')
+
 // ONGS
 Route.get('ongs', 'OngController.index')
 Route.post('ongs', 'OngController.store')
