@@ -3,8 +3,11 @@
 const Incident = use('App/Models/Incident')
 
 class IncidentController {
-  async index() {
-    return await Incident.all()
+  async index({ request }) {
+    const { page = 1 } = request.get()
+
+    // paginate 5 items per page
+    return await Incident.query().paginate(page, 5)
   }
 
   async store({ request, response }) {
