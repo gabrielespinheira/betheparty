@@ -12,7 +12,7 @@ export default function Add() {
         <section>
           <FiHeadphones size={96} color="#438ff2" />
 
-          <h1>Cadastrar novo caso</h1>
+          <h1>Cadastrar nova festa</h1>
 
           <Link to="/profile" className="rollback">
             <FiArrowLeft size={16} color="#438ff2" />
@@ -21,12 +21,12 @@ export default function Add() {
         </section>
 
         <form>
-          <input type="text" placeholder="Título do caso" />
+          <input type="text" placeholder="Nome da festa" />
           <textarea placeholder="Descrição"></textarea>
-          <input type="text" placeholder="Valor em reais" />
+          <input type="text" placeholder="Valor do ingresso" />
 
           <button type="submit" className="btn">
-            Cadastre-se
+            Cadastrar
           </button>
         </form>
       </div>

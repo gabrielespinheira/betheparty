@@ -21,7 +21,7 @@ export default function Register() {
         </section>
 
         <form>
-          <input type="text" placeholder="Nome da ONG" />
+          <input type="text" placeholder="Nome da Empresa" />
           <input type="email" placeholder="E-mail" />
           <input type="text" placeholder="WhatsApp" />
 

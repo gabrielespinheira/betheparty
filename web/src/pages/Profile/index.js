@@ -10,10 +10,10 @@ export default function Profile() {
       <header>
         <FiHeadphones size={64} color="#438ff2" />
 
-        <span>Bem vinda, APAD</span>
+        <span>Olá, #</span>
 
         <Link to="/new" className="btn">
-          Cadastrar novo caso
+          Cadastrar nova festa
         </Link>
 
         <button>
@@ -21,17 +21,17 @@ export default function Profile() {
         </button>
       </header>
 
-      <h1>Casos Cadastrados</h1>
+      <h1>Festas Cadastradas</h1>
 
       <ul>
         <li>
-          <strong>CASO:</strong>
+          <strong>FESTA:</strong>
           <p>Caso tete</p>
 
           <strong>DESCRIÇÃO:</strong>
           <p>teste</p>
 
-          <strong>VALOR:</strong>
+          <strong>INGRESSO:</strong>
           <p>R$ 120,00</p>
 
           <button>
@@ -40,13 +40,13 @@ export default function Profile() {
         </li>
 
         <li>
-          <strong>CASO:</strong>
+          <strong>FESTA:</strong>
           <p>Caso tete</p>
 
           <strong>DESCRIÇÃO:</strong>
           <p>teste</p>
 
-          <strong>VALOR:</strong>
+          <strong>INGRESSO:</strong>
           <p>R$ 120,00</p>
 
           <button>
@@ -55,13 +55,13 @@ export default function Profile() {
         </li>
 
         <li>
-          <strong>CASO:</strong>
+          <strong>FESTA:</strong>
           <p>Caso tete</p>
 
           <strong>DESCRIÇÃO:</strong>
           <p>teste</p>
 
-          <strong>VALOR:</strong>
+          <strong>INGRESSO:</strong>
           <p>R$ 120,00</p>
 
           <button>
