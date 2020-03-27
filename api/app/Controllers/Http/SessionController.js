@@ -1,20 +1,20 @@
 'use strict'
 
-const Ong = use('App/Models/Ong')
+const Company = use('App/Models/Company')
 
 class SessionController {
   async login({ request, response }) {
     const { code } = request.body
 
-    const ong = await Ong.query()
+    const company = await Company.query()
       .where('code', code)
       .first()
 
-    if (!ong) {
-      return response.state(400).json({ error: 'ONG not found' })
+    if (!company) {
+      return response.status(400).json({ error: 'Company not found' })
     }
 
-    return ong
+    return company
   }
 }
 

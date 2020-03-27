@@ -10,14 +10,14 @@ Route.get('/', () => {
 // Sessions
 Route.post('sessions', 'SessionController.login')
 
-// ONGS
-Route.get('ongs', 'OngController.index')
-Route.post('ongs', 'OngController.store')
+// Company
+Route.get('companies', 'CompanyController.index')
+Route.post('companies', 'CompanyController.store')
 
-// Incidents
-Route.get('incidents', 'IncidentController.index')
-Route.post('incidents', 'IncidentController.store')
-Route.delete('incidents/:id', 'IncidentController.destroy')
+// Party
+Route.get('parties', 'PartyController.index')
+Route.post('parties', 'PartyController.store')
+Route.delete('parties/:id', 'PartyController.destroy')
 
 // Profile
 Route.get('profile', 'ProfileController.index')

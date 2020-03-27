@@ -3,9 +3,9 @@
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
 const Model = use('Model')
 
-class Ong extends Model {
-  incidents() {
-    return this.hasMany('App/Models/Incident')
+class Company extends Model {
+  parties() {
+    return this.hasMany('App/Models/Company')
   }
 
   static get hidden() {
@@ -13,4 +13,4 @@ class Ong extends Model {
   }
 }
 
-module.exports = Ong
+module.exports = Company

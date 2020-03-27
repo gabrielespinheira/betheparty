@@ -1,18 +1,18 @@
 'use strict'
 
 const Encryption = use('Encryption')
-const Ong = use('App/Models/Ong')
+const Company = use('App/Models/Company')
 
-class OngController {
+class CompanyController {
   async index() {
-    return await Ong.all()
+    return await Company.all()
   }
 
   async store({ request }) {
     const { name, email, whatsapp, city, uf } = request.body
     const code = Encryption.encrypt(name)
 
-    await Ong.create({ code, name, email, whatsapp, city, uf })
+    await Company.create({ code, name, email, whatsapp, city, uf })
 
     return { code }
   }
@@ -24,4 +24,4 @@ class OngController {
   async destroy() {}
 }
 
-module.exports = OngController
+module.exports = CompanyController

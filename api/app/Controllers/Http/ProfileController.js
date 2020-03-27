@@ -1,17 +1,17 @@
 'use strict'
 
-const Incident = use('App/Models/Incident')
+const Party = use('App/Models/Party')
 
 class ProfileController {
   async index({ request, response }) {
-    const ong_id = request.header('Authorization')
+    const company_id = request.header('Authorization')
 
-    if (!ong_id) {
+    if (!company_id) {
       return response.status(401).json({ error: 'Unauthorized' })
     }
 
-    return await Incident.query()
-      .where('ong_id', ong_id)
+    return await Party.query()
+      .where('company_id', company_id)
       .fetch()
   }
 }
