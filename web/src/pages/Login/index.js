@@ -1,16 +1,16 @@
 import React from 'react'
-import { FiLogIn } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import { FiLogIn, FiHeadphones } from 'react-icons/fi'
 
 import { Container } from './styles'
 
-import logo from '../../assets/logo.svg'
 import illustrate from '../../assets/illustrate.svg'
 
 export default function Login() {
   return (
     <Container>
       <section className="form">
-        <img src={logo} alt="BeTheHero" />
+        <FiHeadphones size={96} color="#438ff2" />
 
         <form>
           <h1>Faça seu Login</h1>
@@ -21,10 +21,10 @@ export default function Login() {
             Entrar
           </button>
 
-          <a href="/register">
+          <Link to="/register" className="rollback">
             <FiLogIn size={16} color="#438ff2" />
             Não tenho cadastro
-          </a>
+          </Link>
         </form>
       </section>
 
