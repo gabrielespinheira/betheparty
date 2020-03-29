@@ -22,13 +22,30 @@ import {
 export default function Party() {
   const [parties, setParties] = useState([])
   const [total, setTotal] = useState(0)
+  const [page, setPage] = useState(1)
+  const [loading, setLoading] = useState(false)
+
   const navigation = useNavigation()
 
   async function loadParties() {
-    const response = await api.get('parties')
+    if (loading) {
+      return
+    }
 
-    setParties(response.data.data)
+    if (total > 0 && parties.length === total) {
+      return
+    }
+
+    setLoading(true)
+
+    const response = await api.get('parties', {
+      params: { page },
+    })
+
+    setParties([...parties, ...response.data.data])
     setTotal(response.data.total)
+    setPage(page + 1)
+    setLoading(false)
   }
 
   useEffect(() => {
@@ -55,6 +72,8 @@ export default function Party() {
           data={parties}
           keyExtractor={party => String(party)}
           showsVerticalScrollIndicator={false}
+          onEndReached={loadParties}
+          onEndReachedThreshold={0.2}
           renderItem={({ item: party }) => (
             <Item>
               <Property>Empresa:</Property>
