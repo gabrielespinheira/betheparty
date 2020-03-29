@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Image, Text, FlatList } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { Feather } from '@expo/vector-icons'
 import api from '../../services/api'
