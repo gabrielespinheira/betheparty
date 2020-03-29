@@ -16,12 +16,6 @@ class CompanyController {
 
     return { code }
   }
-
-  async show() {}
-
-  async update() {}
-
-  async destroy() {}
 }
 
 module.exports = CompanyController

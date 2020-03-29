@@ -8,15 +8,15 @@ Route.get('/', () => {
 })
 
 // Sessions
-Route.post('sessions', 'SessionController.login')
+Route.post('sessions', 'SessionController.login').validator('LoginSession')
 
 // Company
 Route.get('companies', 'CompanyController.index')
-Route.post('companies', 'CompanyController.store')
+Route.post('companies', 'CompanyController.store').validator('StoreCompany')
 
 // Party
-Route.get('parties', 'PartyController.index')
-Route.post('parties', 'PartyController.store')
+Route.get('parties', 'PartyController.index').validator('IndexParty')
+Route.post('parties', 'PartyController.store').validator('StoreParty')
 Route.delete('parties/:id', 'PartyController.destroy')
 
 // Profile

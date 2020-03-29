@@ -1,5 +1,6 @@
 'use strict'
 
+const { validate } = use('Validator')
 const Party = use('App/Models/Party')
 
 class PartyController {
@@ -25,6 +26,22 @@ class PartyController {
   }
 
   async destroy({ request, response }) {
+    const rules = {
+      id: 'required|number',
+    }
+
+    const validation = await validate(request.params, rules)
+
+    if (validation.fails()) {
+      return response.status(401).json([
+        {
+          message: 'You must provide a valid id',
+          field: 'id',
+          validation: 'number',
+        },
+      ])
+    }
+
     const { id } = request.params
     const company_id = request.header('Authorization')
     const party = await Party.find(id)
