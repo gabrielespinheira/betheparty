@@ -54,6 +54,7 @@ export const Container = styled.div`
     li {
       background: var(--alt);
       padding: 24px;
+      box-shadow: var(--shadow);
       border-radius: 8px;
       position: relative;
 
