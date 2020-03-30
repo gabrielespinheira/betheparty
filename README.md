@@ -45,3 +45,18 @@ Também desenvolvi um layout em Dark Theme, utilizei as novas funções do CSS p
 - Dark Theme também no mobile (React Native)
 - Integração com meios de pagamento para venda de ingressos
 - Mapa para usuário visualizar os eventos próximos
+
+### Prints
+![Tela de Login](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web1.png)
+
+![Lista de Festas](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web2.png)
+
+![Cadastro de Festas](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web3.png)
+
+![Dark Theme](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web4-dark.png)
+
+![Mobile Lista](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/mobile1.png)
+
+![Detalhes Festas](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/mobile2.png)
+
+![Share](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/mobile3.png)
