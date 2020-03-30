@@ -2,7 +2,7 @@
 
 ### Sobre o Projeto
 
-Aplicação com o objetivo de compra e divulgação de festas e eventos no estilo [Ingresso Rápido](https://www.ingressorapido.com.br/home) e [Ingresso.com](https://www.ingresso.com)
+Aplicação com o objetivo de compra, venda e divulgação de festas e eventos no estilo [Ingresso Rápido](https://www.ingressorapido.com.br/home) e [Ingresso.com](https://www.ingresso.com)
 
 ### Semana Omnistack 11
 
