@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-Aplicação com o objetivo de compra, venda e divulgação de festas e eventos no estilo [Ingresso Rápido](https://www.ingressorapido.com.br/home) e [Ingresso.com](https://www.ingresso.com)
+Aplicação com o objetivo de compra, venda e divulgação de festas e eventos no estilo Ingresso Rápido e Ingresso.com
 </p>
 
 ![Lista de Festas](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web2.png)
