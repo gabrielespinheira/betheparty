@@ -1,10 +1,15 @@
-# BeTheParty
+<h1 align="center">
+  <br>
+  <img src="https://svgur.com/i/KRi.svg" alt="BeTheParty" width="230">
+</h1>
 
-### Sobre o Projeto
-
+<p align="center">
 Aplicação com o objetivo de compra, venda e divulgação de festas e eventos no estilo [Ingresso Rápido](https://www.ingressorapido.com.br/home) e [Ingresso.com](https://www.ingresso.com)
+</p>
 
-### Semana Omnistack 11
+![Lista de Festas](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web2.png)
+
+## Semana Omnistack 11
 
 Aplicação desenvolvida durante a Semana Omnistack 11, da [Rocketseat](https://github.com/Rocketseat)
 
@@ -19,34 +24,41 @@ resolvi utilizar o framework [AdonisJs](https://adonisjs.com), por ser mais robu
 
 Também desenvolvi um layout em Dark Theme, utilizei as novas funções do CSS para verificar a preferência de cores do usuário e assim mostrar o layout ideal. (Light/Dark Theme)
 
-### Tecnologias Utilizadas
-- Node com AdonisJS (API Restful)
-- ReactJS (Web)
-- React Native (iOS e Android)
+## Tecnologias
 
-### Alterações do projeto original
+- [x] [NodeJs](https://nodejs.org/en/) (API Restful)
+- [x] [AdonisJS](https://adonisjs.com/) (Framework JS)
+- [x] [ReactJs](https://github.com/reactjs/reactjs.org) (Web)
+- [x] [React Native](https://github.com/facebook/react-native) (Android e iOS)
+- [x] [SQLite](https://www.sqlite.org/index.html) (Banco de Dados)
+
+## Alterações do projeto original
+
 - ONGs e Causas => Empresas e Festas
-- Illustração e Logo
+- Identidade, Illustração e Logo
 - Express => AdonisJs
 - Dark Theme
 - Share Redes Sociais
 
-### O que aprendi?
-- Aprofundei meus conhecimentos com o framework AdonisJs (node)
-- Aprendi a utilizar variáveis no css
-- Utilizar layout baseado na preferência de cores do usuário
-- Validação de rotas com [Validator](https://adonisjs.com/docs/4.1/validator)
-- Botão de compartilhamento nas redes sociais
-- Deep Linking
+## O que aprendi?
 
-### Futuras features?
+- [x] Aprofundei meus conhecimentos com o framework AdonisJs (node)
+- [x] Aprendi a utilizar variáveis no css
+- [x] Utilizar layout baseado na preferência de cores do usuário
+- [x] Validação de rotas com [Validator](https://adonisjs.com/docs/4.1/validator)
+- [x] Botão de compartilhamento nas redes sociais
+- [x] Deep Linking
+
+## Futuras features?
+
 - Login Social
 - JWT
 - Dark Theme também no mobile (React Native)
 - Integração com meios de pagamento para venda de ingressos
 - Mapa para usuário visualizar os eventos próximos
 
-### Prints
+## Prints
+
 ![Tela de Login](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web1.png)
 
 ![Lista de Festas](https://raw.githubusercontent.com/ogabrielaraujo/betheparty/master/preview/web2.png)
